@@ -1,4 +1,4 @@
-# WinOpto: a tool for learning elementary ray optics
+# WinOpto: a tool for learning elementary geometric optics
 
 **This program was developed for demonstations of the laws of ray optics on the college physics lessons. The program allows you to create optical systems made of lenses, mirrors, and light sources, and observe the trajectories of light rays in those systems. At the time of development (2002) the program was the only one (at my knowledge) that allowed for observation of images of the objects in lenses and mirrors. The program was my graduation project at the Lyceum of Information Technologies 1533 (Лицей Информационных Технологий 1533).**
 
@@ -20,3 +20,5 @@ The `Samples` folder contains the demonstration scenes (`.osf` extension).
 Files with `.ocs` extension are the color scheme files.
 
 The `src` folder contains the program source code (tested to compile under Microsoft Visual C++ 2022 targeting win32 platform).
+
+![winopto](https://user-images.githubusercontent.com/2994860/158594421-74d3be70-06c4-459c-8abe-5e235ec7c7b3.png)
