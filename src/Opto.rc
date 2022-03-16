@@ -1,0 +1,648 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Opto.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LENS DIALOGEX 0, 0, 192, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lens properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,132,7,53,14
+    PUSHBUTTON      "Cancel",IDCANCEL,132,24,53,14
+    LTEXT           "Name:",IDC_STATIC,7,7,26,8
+    EDITTEXT        IDC_LENS_NAME,7,17,92,12,ES_AUTOHSCROLL
+    LTEXT           "X-coordinate:",IDC_STATIC,7,39,55,8
+    EDITTEXT        IDC_LENS_X,7,51,25,12,ES_AUTOHSCROLL
+    LTEXT           "Top:",IDC_STATIC,103,40,24,8
+    EDITTEXT        IDC_LENS_TOP,103,52,26,12,ES_AUTOHSCROLL
+    LTEXT           "Bottom:",IDC_STATIC,103,74,22,8
+    EDITTEXT        IDC_LENS_BOTTOM,103,86,26,12,ES_AUTOHSCROLL
+    LTEXT           "Focal length",IDC_STATIC,7,74,84,8
+    EDITTEXT        IDC_LENS_FDIST,7,86,25,12,ES_AUTOHSCROLL
+    CONTROL         "Show optical axis",IDC_LENS_SHOWMOA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,110,149,11
+    CONTROL         "Show focal planes",IDC_LENS_SHOW_FP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,127,140,11
+END
+
+IDD_FLATMIRROR DIALOGEX 0, 0, 190, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Flat mirror properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,133,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,133,24,50,14
+    LTEXT           "Name:",IDC_STATIC,7,7,66,8
+    EDITTEXT        IDC_FMIRROR_NAME,7,18,103,12,ES_AUTOHSCROLL
+    LTEXT           "From:",IDC_STATIC,7,40,59,8
+    LTEXT           "X:",IDC_STATIC,7,56,11,8
+    EDITTEXT        IDC_FMIRROR_X1,21,54,25,12,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,7,73,10,10
+    EDITTEXT        IDC_FMIRROR_Y1,21,72,25,12,ES_AUTOHSCROLL
+    LTEXT           "To:",IDC_STATIC,72,40,59,8
+    LTEXT           "X:",IDC_STATIC,72,56,11,8
+    EDITTEXT        IDC_FMIRROR_X2,86,54,25,12,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,72,73,10,10
+    EDITTEXT        IDC_FMIRROR_Y2,86,72,25,12,ES_AUTOHSCROLL
+END
+
+IDD_GENERALPROPERTIES DIALOGEX 0, 0, 211, 250
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preferences"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,154,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,24,50,14
+    GROUPBOX        "General",IDC_STATIC,7,7,142,110
+    CONTROL         "Show object shadows",IDC_DRAWSHADOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,25,132,11
+    CONTROL         "Show ray direction",IDC_SHOWRAYARROWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,40,121,8
+    CONTROL         "Show object images",IDC_SHOWILS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,53,128,8
+    LTEXT           "Click precision:",IDC_STATIC,13,84,67,9
+    EDITTEXT        IDC_CLICKACCURACY,115,82,28,12,ES_AUTOHSCROLL
+    LTEXT           "Animation speed (fps):",IDC_STATIC,13,102,99,8
+    EDITTEXT        IDC_ANIM_FREQ,115,100,28,12,ES_AUTOHSCROLL
+    GROUPBOX        "Colors",IDC_STATIC,7,131,197,112
+    PUSHBUTTON      "Mirror",IDC_FMIRROR_COLOR_BUTTON,20,145,75,15
+    PUSHBUTTON      "Shield",IDC_LBLOCK_COLOR_BUTTON,117,145,75,15
+    PUSHBUTTON      "Diverging lens",IDC_DIVLENS_COLOR_BUTTON,15,172,88,15
+    PUSHBUTTON      "Converging lens",IDC_CONLENS_COLOR_BUTTON,109,172,88,15
+    PUSHBUTTON      "Imaginary rays",IDC_ILSCOLOR,16,198,89,15
+    PUSHBUTTON      "Segment",IDC_CSEGCOLOR,131,198,62,15
+    PUSHBUTTON      "Selection color",IDC_SEL_COLOR,67,222,75,15
+    CONTROL         "Select object images",IDC_SELECT_ILS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,65,111,8
+END
+
+IDD_LIGHTBLOCK DIALOGEX 0, 0, 185, 92
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shield properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,128,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,24,50,14
+    LTEXT           "Name:",IDC_STATIC,7,7,66,8
+    EDITTEXT        IDC_LBLOCK_NAME,7,18,103,12,ES_AUTOHSCROLL
+    LTEXT           "From:",IDC_STATIC,7,40,59,8
+    LTEXT           "X:",IDC_STATIC,7,56,11,8
+    EDITTEXT        IDC_LBLOCK_X1,21,54,25,12,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,7,73,10,10
+    EDITTEXT        IDC_LBLOCK_Y1,21,72,25,12,ES_AUTOHSCROLL
+    LTEXT           "To:",IDC_STATIC,75,40,59,8
+    LTEXT           "X:",IDC_STATIC,72,56,11,8
+    EDITTEXT        IDC_LBLOCK_X2,86,54,25,12,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,72,73,10,10
+    EDITTEXT        IDC_LBLOCK_Y2,86,72,25,12,ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 165, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,35,18,20,20
+    CTEXT           "WinOpto 1.0",IDC_STATIC,64,24,68,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,59,85,50,14,WS_GROUP
+    CTEXT           "(c) Alex Dainiak, 2001-2003\nwww.dainiak.com",IDC_STATIC,7,50,151,22
+END
+
+IDD_SETPRIORITY DIALOGEX 0, 0, 139, 143
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Objects"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_OBJLIST,7,7,125,129,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_LIGHTSOURCE DIALOGEX 0, 0, 187, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Light source properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LTEXT           "???:",IDC_STATIC,7,7,18,8
+    EDITTEXT        IDC_LS_NAME,7,17,109,12,ES_AUTOHSCROLL
+    LTEXT           "Position:",IDC_STATIC,11,41,65,8
+    LTEXT           "X:",IDC_STATIC,13,55,8,8
+    EDITTEXT        IDC_LS_X,24,53,32,12,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,13,73,8,8
+    EDITTEXT        IDC_LS_Y,25,71,31,12,ES_AUTOHSCROLL
+    LTEXT           "Ray direction:",IDC_STATIC,7,96,69,8
+    EDITTEXT        IDC_LS_ANGLE,87,96,35,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Color",IDC_LS_COLOR,105,62,48,13
+END
+
+IDD_OPTIMIZEDLG DIALOGEX 0, 0, 154, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optimize layout"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Optimize",IDOK,7,60,71,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,60,50,14
+    LTEXT           "Minimal left padding:",IDC_STATIC,7,18,100,8
+    EDITTEXT        IDC_OPTIMIZELEFT,117,16,28,12,ES_AUTOHSCROLL
+    LTEXT           "Minimal top padding:",IDC_STATIC,7,38,102,8
+    EDITTEXT        IDC_OPTIMIZETOP,117,36,28,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_LENS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_FLATMIRROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_GENERALPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_LIGHTBLOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_SETPRIORITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_LIGHTSOURCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_OPTIMIZEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New",                         ID_FILE_NEW
+        MENUITEM "Open",                        ID_FILE_OPEN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Save as...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+    POPUP "Scene"
+    BEGIN
+        MENUITEM "Add lens...",                 ID_CREATE_LENS
+        MENUITEM "Add mirror...",               ID_CREATE_FLATMIRROR
+        MENUITEM "Add shield...",               ID_CREATE_LIGHTBLOCK
+        MENUITEM "Add light source...",         ID_CREATE_LIGHTSOURCE
+        MENUITEM "Add segment",                 ID_CREATE_LIGHTSEGMENT
+        MENUITEM SEPARATOR
+        MENUITEM "Optimize...",                 ID_OPTIMIZE
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Toolbar",                     ID_VIEW_TOOLBAR
+        MENUITEM "Statusbar",                   ID_VIEW_STATUS_BAR
+        MENUITEM "Object list",                 ID_SHOW_OBJDLG
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom In",                     ID_ZOOM_DECREASE
+        MENUITEM "Zoom Out",                    ID_ZOOM_INCREASE
+        MENUITEM "Fit to view",                 ID_ZOOM_FIT
+        MENUITEM SEPARATOR
+        MENUITEM "Hide rays",                   ID_HIDE_RAYS
+        MENUITEM SEPARATOR
+        MENUITEM "Preferences...",              ID_PROPERTIES
+        MENUITEM "Save color scheme",           ID_SAVE_COLORSCHEME
+        MENUITEM "Load color scheme",           ID_LOAD_COLORSCHEME
+    END
+    POPUP "Animation"
+    BEGIN
+        MENUITEM "Start",                       ID_ANIMATION_START
+        MENUITEM "Stop",                        ID_ANIMATION_STOP
+        MENUITEM "Pause",                       ID_ANIMATION_PAUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Select light source",         ID_SELECT_ANIMLS
+    END
+    POPUP "About"
+    BEGIN
+        MENUITEM "About",                       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040004b0"
+        BEGIN
+            VALUE "CompanyName", "Alex Dainiak, Lyceum of Information Technologies 1533"
+            VALUE "FileDescription", "WinOpto: educational software for learning ray optics"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Opto"
+            VALUE "LegalCopyright", "(C) Alex Dainiak 2001\r\nwww.dainiak.com"
+            VALUE "OriginalFilename", "Opto.EXE"
+            VALUE "ProductName", "WinOpto"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x400, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FLATMIRROR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_GENERALPROPERTIES AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SETPRIORITY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LENS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LIGHTBLOCK AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LIGHTSOURCE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPTIMIZEDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\mainframe3.ico"
+
+IDR_OPTOTYPE            ICON                    "res\\OptoDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 18, 18
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_ZOOM_INCREASE
+    BUTTON      ID_ZOOM_DECREASE
+    BUTTON      ID_ZOOM_FIT
+    SEPARATOR
+    BUTTON      ID_CREATE_LIGHTSOURCE
+    BUTTON      ID_CREATE_LIGHTSEGMENT
+    SEPARATOR
+    BUTTON      ID_CREATE_FLATMIRROR
+    BUTTON      ID_CREATE_LENS
+    BUTTON      ID_CREATE_LIGHTBLOCK
+    SEPARATOR
+    BUTTON      ID_ANIMATION_START
+    BUTTON      ID_ANIMATION_STOP
+    BUTTON      ID_ANIMATION_PAUSE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ID_ANIMATION_PAUSE      "Pause animation"
+    ID_OPTIMIZELOCATION     "Optimize scene layout to better fit on screen"
+    ID_OPTIMIZE             "Optimize scene layout"
+    ID_ZOOM_FIT             "Zoom: fit to view"
+    ID_ZOOM_FIT2            "Zoom: fit to view"
+    ID_CREATE_LIGHTSEGMENT  "Connect two light sources with a light emitting segment"
+    ID_SELECT_ANIMLS        "Select light source to animate"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WinOpto\n\nOpto\n\n\nOpto.Document\nOpto Document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CREATE_FLATMIRROR    "Create new flat mirror"
+    ID_CREATE_LENS          "Create new lens"
+    ID_ZOOM_DECREASE        "Zoom in"
+    ID_ZOOM_INCREASE        "Zoom out"
+    ID_CREATE_LIGHTBLOCK    "Create new shield"
+    ID_CREATE_LIGHTSOURCE   "Create new light source"
+    ID_PROPERTIES           "Properties"
+    ID_ANIMATION_START      "Start animation"
+    ID_ANIMATION_STOP       "Stop animation"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WinOpto"
+    AFX_IDS_IDLEMESSAGE     " "
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create new scene"
+    ID_FILE_OPEN            "Load existing scene"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save current scene"
+    ID_FILE_SAVE_AS         "Save current scene under different name"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this scene"
+    ID_FILE_MRU_FILE2       "Open this scene"
+    ID_FILE_MRU_FILE3       "Open this scene"
+    ID_FILE_MRU_FILE4       "Open this scene"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "About the program"
+    ID_APP_EXIT             "Exit the program"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show toolbar"
+    ID_VIEW_STATUS_BAR      "Show statusbar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Opto.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Opto - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP345.TMP" with contents
+[
+/nologo /MD /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Opto.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Program Files\Microsoft Visual Studio\Opto\Other\optkernel.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP345.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP0346.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Opto.pdb" /machine:I386 /out:"Release/Opto.exe" 
+".\Release\flatmirror.obj"
+".\Release\FMirrorPropertiesDlg.obj"
+".\Release\GeneralPropertiesDlg.obj"
+".\Release\geometry.obj"
+".\Release\gfxparamst.obj"
+".\Release\LBlockPropertiesDlg.obj"
+".\Release\lens.obj"
+".\Release\LensPropertiesDlg.obj"
+".\Release\lightblock.obj"
+".\Release\lightsegment.obj"
+".\Release\lightsource.obj"
+".\Release\LSourcePropertiesDlg.obj"
+".\Release\MainFrm.obj"
+".\Release\ObjPrpDialogs.obj"
+".\Release\OptimizeDlg.obj"
+".\Release\optkernel.obj"
+".\Release\optlist.obj"
+".\Release\Opto.obj"
+".\Release\OptoDoc.obj"
+".\Release\OptoView.obj"
+".\Release\PriorityDlg.obj"
+".\Release\rayanimator.obj"
+".\Release\StdAfx.obj"
+".\Release\Opto.res"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP0346.TMP"
+<h3>Output Window</h3>
+Compiling...
+optkernel.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Opto.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
